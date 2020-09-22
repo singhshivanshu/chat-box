@@ -1,9 +1,17 @@
 .chat {
   display: flex;
-  position: absolute;
+  position: relative;
   width: fit-content;
-  top: 600px;
-  left: 1412px;
+  left: 85%;
+  top: 630px;
+  
+}
+
+@media (max-width: 500px) {
+  .chat {
+    top: 0;
+    left: 40%
+  }
 }
 .background {
   background-color: #f5821f;

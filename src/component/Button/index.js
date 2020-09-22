@@ -10,7 +10,8 @@ function Button(props) {
   return (
     <div className= {`chat ${activeClass}`} onClick={(event) => {
         props.onClick();
-        setToggle(!toggle)
+        setToggle(!toggle);
+        console.log('clicked')
         }}>
       <div className="background"></div>
       <svg
