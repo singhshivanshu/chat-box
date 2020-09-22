@@ -1,0 +1,277 @@
+.box {
+  display: none;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: white;
+  animation-name: box;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+@keyframes box {
+  from {
+    top: 1200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.first-half {
+  position: absolute;
+  width: 416px;
+  height: 278px;
+  top: 52px;
+  left: 35%;
+  background: linear-gradient(123.75deg, #f5821f 1.87%, #ff5c00 120.46%);
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+  animation: animate 2s ease-out 0s;
+  animation-fill-mode: forwards;
+  
+}
+.robot-container {
+  position: absolute;
+  width: 67px;
+  height: 67px;
+  left: 577px;
+  top: 216px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #ff7600 0%, #ff5c00 100%);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  animation: welcome 2s ease-out 2s;
+  animation-fill-mode: forwards;
+}
+
+.heading {
+  position: absolute;
+  height: 19px;
+  left: 28px;
+  top: 26px;
+  color: #2d2d2d;
+}
+
+.second-half {
+  position: absolute;
+  width: 416px;
+  height: 628px;
+  left: 35%;
+  top: 52px;
+  background-color: white;
+  border-radius: 19px;
+}
+
+.middle-block {
+  position: absolute;
+  width: 390px;
+  height: 400px;
+  left: 550px;
+  top: 251px;
+  opacity: 0;
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  animation: middle 3s ease-out 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.chat-container {
+  position: absolute;
+  left: 28px;
+  width: 333px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #e1e1e1;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  opacity: 0;
+}
+
+.c-1 {
+  top: 83px;
+  animation: chats 2s ease-out 4s;
+  animation-fill-mode: forwards;
+  
+
+}
+
+.c-2 {
+  top: 143px;
+  animation: chats 2s ease-out 5.5s;
+  animation-fill-mode: forwards;
+}
+
+.c-3 {
+  top: 203px;
+  animation: chats 2s ease-out 7s;
+  animation-fill-mode: forwards;
+}
+
+.c-4 {
+  top: 263px;
+  animation: chats 2s ease-out 8.5s;
+  animation-fill-mode: forwards;
+}
+
+.chat-button {
+  position: absolute;
+  width: 268px;
+  height: 44px;
+  left: 58px;
+  top: 333px;
+  background: #ffffff;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
+  animation: chats 2s ease-out 10s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.note-point {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 10px;
+  top: 20px;
+  border-radius: 10px;
+  background: rgba(255, 118, 0, 0.8);
+}
+
+.message-container {
+  position: absolute;
+  left: 25px;
+  top: 13px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #2d2d2d;
+}
+
+.button-message {
+  position: absolute;
+  left: 60px;
+  top: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #2d2d2d;
+}
+
+.line-1 {
+  position: absolute;
+  width: 53px;
+  height: 39px;
+  left: 56px;
+  top: 19px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  color: #ffffff;
+  text-align: initial;
+  
+}
+
+.line-2 {
+  position: absolute;
+  width: 54px;
+  height: 29px;
+  left: 56px;
+  top: 65px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 29px;
+  color: #ffffff;
+  text-align: initial;
+}
+
+.line-3 {
+  position: absolute;
+  width: 228px;
+  height: 46px;
+  left: 56px;
+  top: 104px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  text-align: initial;
+}
+
+.welcome-message {
+  opacity: 0;
+  animation: welcome 2s ease-out 1s;
+  animation-fill-mode: forwards;
+}
+
+.hand {
+  position: absolute;
+  top: 1px;
+  left: 70px;
+}
+
+.robot {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+}
+
+.message {
+  position: absolute;
+  left: -19px;
+  top: 3px;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes welcome {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes middle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes chats {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
