@@ -8,6 +8,18 @@
   position: relative;
 }
 
+@-webkit-keyframes box {
+  from {
+    top: 1200px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+
 @keyframes box {
   from {
     top: 1200px;
@@ -18,6 +30,7 @@
     opacity: 1;
   }
 }
+
 
 p {
   margin: 0;
@@ -232,10 +245,30 @@ p {
   top: 3px;
 }
 
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes animate {
   0% {
     opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes welcome {
+  0% {
+    opacity: 0;
+  }
+
   100% {
     opacity: 1;
   }
@@ -251,11 +284,30 @@ p {
     }
 }
 
+@-webkit-keyframes middle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes middle {
   0% {
     opacity: 0;
   }
 
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes chats {
+  0% {
+    opacity: 0;
+  }
   100% {
     opacity: 1;
   }
