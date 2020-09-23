@@ -2,11 +2,10 @@
   display: none;
   flex-flow: column wrap;
   align-items: center;
-  background-color: white;
   animation-name: box;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-  background: transparent;
+  position: relative;
 }
 
 @keyframes box {

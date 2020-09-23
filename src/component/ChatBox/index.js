@@ -6,10 +6,10 @@ import { ReactComponent as Message } from "../../pics/Message.svg";
 import Button from "../Button";
 
 function ChatBox() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false)
 
   return (
-    <>
+    <div>
      <Button onClick={() => setShow(!show)} />
       <div className="box" style={{ display: show ? "flex" : "none" }}>
         <div className="second-half">
@@ -65,7 +65,7 @@ function ChatBox() {
         </div>
       </div>
      
-    </>
+    </div>
   );
 }
 

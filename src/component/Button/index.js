@@ -2,17 +2,19 @@ import React, { useState } from "react";
 import "./style.css";
 
 function Button(props) {
-    const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
 
-
-    let activeClass = toggle ? 'active' : null
+  let activeClass = toggle ? "active" : null;
 
   return (
-    <div className= {`chat ${activeClass}`} onClick={(event) => {
+    <div
+      className={`chat ${activeClass}`}
+      onClick={() => {
         props.onClick();
         setToggle(!toggle);
-        console.log('clicked')
-        }}>
+        console.log("clicked");
+      }}
+    >
       <div className="background"></div>
       <svg
         className="chat-bubble"
